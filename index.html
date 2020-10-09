@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Alberto Leal | Front-end Developer</title>
+    <meta name="author" content="Alberto Leal">
+    <meta name="description" content="Minha primeira page responsiva do mobile ao desktop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="front-end, developer, mobile">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/android-icon-96x96.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d8f9bfa0d.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html">
+            <h1 class="logo">Alberto Leal Santana | Desenvolvedor Front-end.</h1>
+        </a>
+        <button class="btn-menu"><i class="fas fa-bars fa-2x"></i></button>
+        <nav class="menu">
+            <a class="btn-close"><i class="fas fa-times fa-2x"></i></a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CLIENTES</a></li>
+                <li><a href="#">PROJETOS</a></li>
+                <li><a href="#">SOBRE</a></li>
+                <li><a href="#">CONTATO</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <div class="title">
+            <h2>OUSE INOVAR!</h2>
+            <h3>Criamos experiências e estabelecemos ações estratégicas que conectam marcas e consumidores. </h3>
+        </div>
+        <div class="buttons">
+            <button class="btn-cadastrar">CADASTRAR<i class="fas fa-arrow-alt-circle-right"></i></button>
+            <button class="btn-sobre">SOBRE<i class="fas fa-question-circle"></i></button>
+        </div>
+    </div>
+    <main class="servicos">
+        <article class="servico">
+            <a href="#"><img src="img/pexels-tranmautritam-285814.jpg" alt="Desenvolvedor Front-end"></a>
+            <div class="inner">
+                <a href="#">Desenvolvedor Front-end</a>
+                <h4> Site Personalizado, páginas responsivas</h4>
+                <p>(texto ilustrativo)Se você está precisando de criação de algum material em específico, conte com a nossa equipe de profissionais.
+                    Eles farão toda campanha publicitária. VT, outdoor, folder, anúncio e muito mais pela sua empresa no mais alto padrão de qualidade.</p>
+            </div>
+        </article>
+        <article class="servico">
+            <a href="#"><img src="img/pexels-kaboompics-com-6663.jpg" alt="Desenvolvimento Web"></a>
+            <div class="inner">
+                <a href="#">Design gráfico</a>
+                <h4>Panfletos, Cartões de visita interativos</h4>
+                <p>(texto ilustrativo)Se você está precisando de criação de algum material em específico, conte com a nossa equipe de profissionais.
+                    Eles farão toda campanha publicitária. VT, outdoor, folder, anúncio e muito mais pela sua empresa no mais alto padrão de qualidade. </p>
+            </div>
+        </article>
+        <article class="servico">
+            <a href="#"><img src="img/pexels-fauxels-3183165.jpg" alt="Equipe capacitada"></a>
+            <div class="inner">
+                <a href="#">Formação de equipe</a>
+                <h4>Participação em projetos, etc...</h4>
+                <p>(texto ilustrativo)Se você está precisando de criação de algum material em específico, conte com a nossa equipe de profissionais.
+                    Eles farão toda campanha publicitária. VT, outdoor, folder, anúncio e muito mais pela sua empresa no mais alto padrão de qualidade. </p>
+            </div>
+        </article>
+    </main>
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <h2>Inscreva-se agora!</h2>
+        <h3>Receba novidades, dicas e muito mais.</h3>
+        <form>
+            <input type="email" name="email" placeholder="Seu email">
+            <button>Cadastrar</button>
+        </form>
+    </section>
+    <!-- FIM DO NEWSLETTER -->
+    <footer class="rodape">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github-alt"></i></a>
+            <a class="cjs" data-clipboard-text="lealbeto78@gmail.com"><i class="fas fa-envelope tooltip"><span class="tooltiptext">
+                        Clique para copiar meu endereço de e-mail para sua área de transferência 😀</span></i></a>
+        </div>
+        <p class="copy">Copyrigt &copy; Alberto Leal 2020. Todos os direitos reservados.</p>
+
+
+    </footer>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(".btn-menu").click(function() {
+            $(".menu").show();
+        });
+
+        $(".btn-close").click(function() {
+            $(".menu").hide();
+        });
+
+    </script>
+    <!-- FIM DO JQUERY -->
+
+    <script>
+        const clipboard = new ClipboardJS('.cjs')
+
+        clipboard.on('success', function(e) {
+            alert("lealbeto78@gmail.com copiado com sucesso!")
+        });
+
+        clipboard.on('error', function(e) {
+            alert("Falha ao copiar texto")
+        });
+
+    </script>
+
+    <!-- FIM DO JQUERY -->
+</body>
+
+</html>
